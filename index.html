@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL AMIN</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url(); /* Background image */
+            background-size: cover;
+            background-position: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .text-container {
+            font-size: 4rem;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            position: relative;
+        }
+
+        .line, .line2, .line3 {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid black;
+            width: 0;
+            margin: 10px 0;
+        }
+
+        .line {
+            animation: typing 3s steps(10) forwards, deleting 3s steps(10) 6s forwards;
+        }
+
+        .line2 {
+            animation: typing2 3s steps(8) forwards, deleting2 3s steps(8) 6s forwards;
+            animation-delay: 3s;
+        }
+
+        .line3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: typing3 4s steps(36) forwards;
+            animation-delay: 9s;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 10ch; }
+        }
+
+        @keyframes typing2 {
+            from { width: 0; }
+            to { width: 8ch; }
+        }
+
+        @keyframes typing3 {
+            from { width: 0; }
+            to { width: 36ch; }
+        }
+
+        @keyframes deleting {
+            from { width: 10ch; }
+            to { width: 0; }
+        }
+
+        @keyframes deleting2 {
+            from { width: 8ch; }
+            to { width: 0; }
+        }
+
+        /* Hide the main content initially */
+        #mainContent {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Step-by-Step Animation -->
+    <div class="text-container">
+        <span class="line">Hello Mr,Ms</span>
+        <span class="line2">Customer</span>
+        <span class="line3">Take a second, this is worth your time.</span>
+    </div>
+
+    <!-- Main Content (Hidden initially) -->
+    <div id="mainContent">
+        <header>
+            <link rel="stylesheet" href="style.css" type="text/css">
+            <h1><img src="WhatsApp Image 2024-11-03 at 23.17.38_f3a70e76.jpg" height="27" width="20" alt="logo"><em>AL AMIN</em> </h1>
+            <hr>
+        
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#signin">Sign In</a></li>
+                </ul>
+            </nav>
+            <h2>Your Style, Your Story</h2>
+            <h3>Each piece is made with love and has its own story, made to fit your style and story.</h3>
+        </header>
+
+        <main>
+            <h2><em>Featured Collections</em></h2>
+            <img src="nikola-duza-TSh8D8KutWU-unsplash (1).jpg" height="1000" width="2000" alt="Stylish Shirt">
+            <section id="home">
+                <div class="product">
+                    <img src="premium_photo-1678218594563-9fe0d16c6838.avif" height="500" width="1000" alt="Stylish Shirt">
+                    <h3>Formal Shirt</h3>
+                    <p>$29.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="oni-622zr-secret-denim-kabuki-beige-20oz-relaxed-tapered-jeans-front.webp" height="500" width="1000" alt="Comfortable Jeans">
+                    <h3>Comfortable Jeans</h3>
+                    <p>$49.99</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="-288Wx360H-466453554-black-MODEL.avif" alt="Cool Jacket">
+                    <h3>Relax Fit Polo Neck Jacket</h3>
+                    <p>$89.99</p>
+                    <button>Add to Cart</button>
+                </div>
+            </section>
+
+            <h1>Sign In</h1>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            
+            <section id="about">
+                <h2>About Us</h2>
+                <p>Discover a world of inspiration and creativity, where ideas meet to shape a bright future. We are dedicated to providing the latest trends in fashion at affordable prices. Our mission is to make you feel good in what you wear!</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required="">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required="">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required=""></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <div class="follow-our-website">
+            <h2>Follow our website</h2>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="Facebook_logo_(square).png" height="27" width="20" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="download (7).jpeg" height="27" width="20" alt="Instagram"></a></li>
+                <li><a href="https://www.twitter.com/" target="_blank"><img src="images.png" height="27" width="17" alt="Twitter"></a></li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>© 2024 Clothing Store. All rights reserved AL AMIN.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Listen for the end of the animation on .line3
+        document.querySelector('.line3').addEventListener('animationend', function() {
+            // Show the main content after animation completes
+            document.getElementById('mainContent').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
